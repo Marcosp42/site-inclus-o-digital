@@ -13,8 +13,9 @@ html {
 }
 
 body {
+    width: 90%;
     margin: auto;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #1a0021;
 }
 
@@ -25,6 +26,11 @@ main {
 a {
     text-decoration: none;
 }
+
+:root {
+    --shadowSection: 0px 0px 20px 2px rgb(40, 59, 79);
+}
+
 
 /* TESTE */
 /* main * {
@@ -38,9 +44,11 @@ a {
 ===============================================================================================
 */
 
+
 header {
+
     position: relative;
-    display: absolute;
+    margin-bottom: 2rem;
 }
 
 header #banner {
@@ -83,7 +91,7 @@ header .menu {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 5px;
+    top: 0;
 }
 
 #convite>#container {
@@ -99,12 +107,13 @@ header .menu {
 }
 
 #convite #container img {
+
     height: clamp(5vh, 3em, 6vh);
     padding-right: 10px;
 }
 
 #convite #container h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 @keyframes rolagemConvite {
@@ -134,21 +143,20 @@ seção 1
 
 #conteudo1 {
     display: flex;
-    align-items: center;
-    height: 70vh;
+    margin-bottom: 1rem;
 }
 
 #conteudo1>#container {
     padding-top: 5%;
     background-color: rgba(144, 196, 255, 0.063);
-    border-radius: 20px;
     position: relative;
-    box-shadow: 0px 0px 70px 10px rgba(0, 0, 0, 0.47);
+    box-shadow: var(--shadowSection);
     height: 80%;
     width: 97%;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #conteudo1 #texto {
@@ -159,7 +167,7 @@ seção 1
 
 #conteudo1 #texto h2 {
     width: 100%;
-    font-size: 3rem;
+    font-size: 2.3rem;
     text-align: left;
     font-weight: bold;
 }
@@ -174,7 +182,7 @@ seção 1
 #conteudo1 #texto p {
     width: 100%;
     height: 50%;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     margin-top: 14px;
     text-align: left;
 }
@@ -193,31 +201,22 @@ seção 2
 ============================================================================================== 
  */
 
-/* 
-padrao
------------------------------------------------------------------
-*/
 #conteudo2 {
     display: flex;
-    align-items: center;
+    margin-bottom: 1rem;
+
 }
 
 #conteudo2 #container {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
     background-color: rgba(144, 196, 255, 0.063);
-    box-shadow: 0px 0px 70px 10px rgba(0, 0, 0, 0.47);
+    box-shadow: var(--shadowSection);
     padding: 40px 0px;
     height: 80%;
     width: 97%;
     margin: auto;
 }
-
-/* 
-top
------------------------------------------------------------------
-*/
 
 #conteudo2 #top {
     display: flex;
@@ -234,7 +233,7 @@ top
 #conteudo2 #texto p {
     width: 100%;
     height: 50%;
-    font-size: 15px;
+    font-size: 1.5rem;
     margin-top: 10px;
     text-align: left;
 }
@@ -242,7 +241,7 @@ top
 #conteudo2 #texto p a {
     text-decoration: none;
     font-style: inherit;
-    font-size: 12px;
+    font-size: 1rem;
 }
 
 #conteudo2 #imgDestaque {
@@ -284,75 +283,111 @@ top
 
 
 /* 
-bottom
------------------------------------------------------------------------------------------------
-*/
-
-/* 
 seção 3
+===================================================================================================================
 */
-
 #conteudo3 {
-    margin-top: 20px;
+    display: flex;
+    margin-bottom: 1rem;
+
 }
 
 #conteudo3 #container {
-    padding: 40px 0px;
-    background-color: rgba(144, 196, 255, 0.063);
-    border-radius: 20px;
-    box-shadow: 0px 0px 70px 10px rgba(0, 0, 0, 0.47);
     width: 97%;
-    margin: auto;
-}
-
-#conteudo3 #objetivo {
-    width: 95%;
+    padding: 40px 0px;
     margin: auto;
     display: flex;
-    padding-top: 40px;
+    background-color: rgba(144, 196, 255, 0.063);
+    box-shadow: var(--shadowSection);
+    justify-content: space-around;
+
 }
 
-#conteudo3 #objetivo #texto {
-    background-color: #0000005f;
-
-    border-radius: 60px;
+#conteudo3 #container #texto {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
 }
 
-#conteudo3 #objetivo #imgDestaque {
-    width: 8vw;
-    height: 25vh;
-    content: url(img/Scratch1.png);
-    object-fit: contain;
-
-}
-
-#conteudo3 #objetivo #texto h2 {
-    font-size: 30px;
-    text-align: center;
+#conteudo3 #container #texto p {
+    font-size: 1.3rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-#conteudo3 #objetivo #texto span {
-    font-size: 20px;
-    text-align: center;
+
+#conteudo3 #container #sugestao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#conteudo3 #container #sugestao #sites {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#conteudo3 #container #sugestao #sites h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
+    font-weight: 400;
+    text-align: left;
+
 }
 
-#conteudo3 #objetivo #texto h3 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 5px;
+#conteudo3 #container #sugestao #sites p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 400;
 }
 
-#conteudo3 #objetivo #texto p {
-    font-size: 15px;
-    text-align: center;
+#conteudo3 #container #sugestao #sites ul,
+li,
+a {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 400;
 }
+
+
+
+#conteudo3 #container #sugestao #canais {}
+
+#conteudo3 #container #sugestao #canais h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+}
+
+
+#conteudo3 #container #sugestao>#itens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#conteudo3 #container #sugestao .item {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: black;
+    display: flex;
+    float: left;
+}
+
+#conteudo3 #imgDestaque {
+    width: 40rem;
+    content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
+    object-fit: cover;
+}
+
 
 /* 
 seção4
@@ -360,23 +395,23 @@ seção4
 */
 #conteudo4 {
     display: flex;
-    margin-top: 20px;
+    margin-bottom: 1rem;
+
 }
 
 #conteudo4 #container {
     width: 97%;
     padding: 40px 0px;
-    border-radius: 20px;
     margin: auto;
     display: flex;
     background-color: rgba(144, 196, 255, 0.063);
-    box-shadow: 0px 0px 70px 10px rgba(0, 0, 0, 0.47);
+    box-shadow: var(--shadowSection);
 
 }
 
 #conteudo4 #container #player {
-    width: 50%;
-    height: 50vh;
+    width: 47%;
+    height: 40vh;
     display: flex;
     justify-content: center;
 
@@ -391,263 +426,374 @@ seção4
     background-color: rgba(0, 0, 0, 0.572);
 }
 
-#conteudo4 #container #sugestao {
-    width: 50%;
-    height: 50vh;
+#conteudo4 #objetivo {
+    width: 49%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
+    padding-top: 2.5rem;
     justify-content: center;
     align-items: center;
 }
 
-#conteudo4 #container #sugestao h2 {
+#conteudo4 #objetivo #texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#conteudo4 #objetivo #imgDestaque {
+    width: 8vw;
+    height: 25vh;
+    content: url(img/Scratch1.png);
+    object-fit: contain;
+
+}
+
+#conteudo4 #objetivo #texto h2 {
+    font-size: 2rem;
     text-align: center;
-    height: 10%;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-#conteudo4 #container #sugestao>#itens {
-    display: flex;
-    flex-wrap: wrap;
+#conteudo4 #objetivo #texto span {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-#conteudo4 #container #sugestao .item {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin: 5px;
-    background-color: black;
-    display: flex;
-    float: left;
+#conteudo4 #objetivo #texto h3 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 5px;
 }
 
-/* 
-imagens  item sugestao
--------------------------------------------------------------------------------------------------------------------
-*/
-
-#conteudo4 #container #sugestao #itens .item:nth-child(1) {
-    content: url(https://yt3.ggpht.com/RiVDOn42JCzWf8ctHqxV26M59IE5_NGuzSSyJdVL8rbKTCTBiwXOeBW8JWvm_azerCQ-LXy2bdk=s900-c-k-c0x00ffffff-no-rj);
-    object-fit: cover;
-
+#conteudo4 #objetivo #texto p {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-#conteudo4 #container #sugestao #itens .item:nth-child(2) {
-    content: url(https://escolhaideal.org/wp-content/uploads/2021/08/background-cod3r.jpg);
-    object-fit: cover;
-}
-
-#conteudo4 #container #sugestao #itens .item:nth-child(3) {
-    content: url(https://cdn1.telegram-cdn.org/file/ZX8mAdsgU8Us9jr13OlBvR6q8sHstKNsN7na385lvFAeseqTiJwhA-1GxbsGYwdM1Ss9oIMmlB8b3iG90JG3DC64DM8ie1mrJUDmkxlNBImHWK9k7XTWhWdQQJItAKRXlrxh0JnVB57zdJrMPKER1Rnu2thqMuwQjK3h9AzCNxSQsCr0XnhehEi2m7RCpxQd94NYxRMz_M0S6DwKguFZUYvFtPOzE_V4BhKVAnydMcu0NyxOpCH2EmBxHMoXWXYALJGLU1-w0oiq01nOeC0FM4higUTQMJaJzGrEz53m3VDvvc7CPwqx_5itkOvQZUPHR_UYt8pJ34N8Tf0VHU_HAw.jpg);
-    object-fit: cover;
-
-}
-
-#conteudo4 #container #sugestao #itens .item:nth-child(4) {
-    content: url();
-    object-fit: cover;
-
-}
-
-#conteudo4 #container #sugestao #itens .item:nth-child(5) {
-    content: url();
-    object-fit: cover;
-
-}
-
-#conteudo4 #container #sugestao #itens .item:nth-child(6) {
-    content: url();
-    object-fit: cover;
-
-}
 
 /* 
 -------------------------------------------------------------------------------------------------------------------
 */
-/* @media screen and (min-width:1080px) {
-    body {
-        min-width: 1080px;
-        max-width: 1600px;
-    }
-} */
+
+
 
 @media screen and (max-width:768px) {
 
 
-    #conteudo1 {
+    body {
         width: 100%;
+    }
+
+    #convite #container h2 {
+        font-size: 1.4rem;
+        font-weight: bolder;
+    }
+
+    /*
+    seção 1
+    ============================================================================================== 
+     */
+
+    #conteudo1 {
         display: flex;
-        align-items: center;
-        flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     #conteudo1>#container {
+        padding: 20px;
         width: 100%;
+        margin: auto;
         display: flex;
         flex-direction: column;
-        padding-top: 5%;
     }
 
     #conteudo1 #texto {
-        width: 90%;
+        width: 100%;
         display: flex;
-        margin: auto;
+        flex-direction: column;
     }
 
     #conteudo1 #texto h2 {
         width: 100%;
         font-size: 5rem;
-        text-align: center;
-        font-weight: bold;
     }
 
     #conteudo1 #texto blockquote {
         width: 100%;
-        font-size: 1.8rem;
-        text-align: center;
-        font-style: italic;
+        font-size: 2rem;
     }
 
     #conteudo1 #texto p {
-        width: 90%;
-        margin: auto;
+        width: 100%;
         font-size: 2.5rem;
     }
 
     #conteudo1 #imgDestaque {
-        width: 70%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
+        margin-top: 1.5rem;
+        width: 80%;
     }
 
-    /* seção 2
-    ===============================================================================================
-    */
+    /*
+    seção 2
+    ============================================================================================== 
+     */
+
     #conteudo2 {
         display: flex;
-        align-items: center;
+        margin-bottom: 2rem;
+
     }
 
     #conteudo2 #container {
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
         background-color: rgba(144, 196, 255, 0.063);
-        box-shadow: 0px 0px 70px 10px rgba(0, 0, 0, 0.47);
-        padding: 40px 0px;
-        height: 80%;
-        width: 97%;
-        margin: auto;
-    }
-
-    /* 
-    top
-    -----------------------------------------------------------------
-    */
-
-    #conteudo2 #top {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #conteudo2 #texto {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-    }
-
-    #conteudo2 #texto p {
+        box-shadow: var(--shadowSection);
         width: 100%;
-        font-size: 2.5rem;
-
-    }
-
-    #conteudo2 #texto p a {
-        text-decoration: none;
-        font-style: inherit;
-        font-size: 0.7rem;
-    }
-
-    #conteudo2 #imgDestaque {
-        width: 70%;
         margin: auto;
-        content: url(img/foto1.png);
-        object-fit: contain;
-
-    }
-
-    #conteudo2 #referencia {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    #conteudo2 #referencia a {
-        flex: 0.1;
-    }
-
-    #conteudo2 #referencia .item {
-        display: inline-block;
-        width: 7rem;
-        height: 7rem;
-    }
-
-    /* 
-seção 3
-*/
-
-    #conteudo3 {
-        margin-top: 20px;
-
-    }
-
-    #conteudo3 #container {
-        display: flex;
-        width: 100%;
-    }
-
-    #conteudo3 #objetivo {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-
-    #conteudo3 #objetivo #texto {
-        background-color: #00000042;
-        border-radius: 60px;
         display: flex;
         flex-direction: column;
         padding: 20px;
     }
 
-    #conteudo3 #objetivo #imgDestaque {
+    #conteudo2 #top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conteudo2 #texto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conteudo2 #texto p {
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    #conteudo2 #texto p a {
+        text-decoration: none;
+        font-style: inherit;
+        font-size: 1rem;
+    }
+
+    #conteudo2 #imgDestaque {
+        width: 80%;
+        margin: auto;
+    }
+
+    #conteudo2 #referencia {
+        justify-content: flex-end;
+    }
+
+    #conteudo2 #referencia a {
+        font-size: 2rem;
+        flex: 0.2;
+    }
+
+    #conteudo2 #referencia .item {
+        display: inline-block;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    /* 
+    seção 3
+    ===================================================================================================================
+    */
+    #conteudo3 {
+        display: flex;
+        margin-bottom: 2rem;
+
+    }
+
+    #conteudo3 #container {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        background-color: rgba(144, 196, 255, 0.063);
+        box-shadow: var(--shadowSection);
+        flex-direction: column;
+
+    }
+
+    #conteudo3 #container #texto {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #conteudo3 #container #texto p {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+
+    #conteudo3 #container #sugestao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #conteudo3 #container #sugestao #sites {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #conteudo3 #container #sugestao #sites h2 {
+        font-size: 4rem;
+        margin: 20px 0px;
+        font-weight: 400;
+        text-align: left;
+
+    }
+
+    #conteudo3 #container #sugestao #sites p {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    #conteudo3 #container #sugestao #sites ul,
+    li,
+    a {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    #conteudo3 #container #sugestao #canais {}
+
+    #conteudo3 #container #sugestao #canais h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+
+    }
+
+
+    #conteudo3 #container #sugestao>#itens {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #conteudo3 #container #sugestao .item {
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        margin: 5px;
+        background-color: black;
+        display: flex;
+        float: left;
+    }
+
+    #conteudo3 #imgDestaque {
+        width: 60rem;
+        content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
+        object-fit: cover;
+    }
+
+
+    /* 
+    seção4
+    ===============================================================================================
+    */
+    #conteudo4 {
+        display: flex;
+        margin-bottom: 1rem;
+
+    }
+
+    #conteudo4 #container {
+        width: 100%;
+        margin: auto;
+        padding: 15px 0px;
+        display: flex;
+        background-color: rgba(144, 196, 255, 0.063);
+        box-shadow: var(--shadowSection);
+        flex-direction: column;
+
+    }
+
+    #conteudo4 #container #player {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #conteudo4 #container #player video {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.572);
+    }
+
+    #conteudo4 #objetivo {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding-top: 2.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #conteudo4 #objetivo #texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        border-radius: 20px;
+    }
+
+    #conteudo4 #objetivo #imgDestaque {
         width: 20rem;
+        height: 20rem;
         content: url(img/Scratch1.png);
         object-fit: contain;
 
     }
 
-    #conteudo3 #objetivo #texto h2 {
-        margin: 2px;
+    #conteudo4 #objetivo #texto h2 {
         font-size: 3rem;
         text-align: center;
+        margin-bottom: 1rem;
         font-weight: bold;
     }
 
-    #conteudo3 #objetivo #texto span {
-        margin: 2px;
+    #conteudo4 #objetivo #texto span {
+        font-size: 2.5rem;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
 
-        font-size: 2rem;
+    #conteudo4 #objetivo #texto h3 {
+        font-size: 2.4rem;
         text-align: center;
+        margin-bottom: 5px;
     }
 
-    #conteudo3 #objetivo #texto h3 {
-        font-size: 2.1rem;
-        text-align: center;
+    #conteudo4 #objetivo #texto p {
+        font-size: 2.5rem;
+        text-align: left;
+        padding: 5px;
     }
 
-    #conteudo3 #objetivo #texto p {
-        font-size: 1.7rem;
-    }
 }
