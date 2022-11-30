@@ -48,40 +48,14 @@ a {
 header {
     position: relative;
     margin-bottom: 0.5rem;
-}
-
-header #banner {
     width: 97%;
     margin: auto;
-    height: 20rem;
-    background-image: url(img/inclusao3.jpg);
-    background-size: cover;
     box-shadow: var(--shadowSection);
+    margin-bottom: 0.5rem;
 
 }
-
-header .menu {
-    position: absolute;
-    top: 1vw;
-    right: 4vw;
-}
-
-.menu .itenMenu {
-    width: 4rem;
-    height: 4rem;
-    display: inline-block;
-}
-
-.menu .itenMenu:nth-child(1) {
-    background-image: url(icones/icons8-book-reading-30.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.menu .itenMenu:nth-child(2) {
-    background-image: url(icones/icons8-info-squared-30.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+header img {
+    width: 100%;
 }
 
 /* Convite
@@ -108,12 +82,12 @@ header .menu {
 }
 
 #convite #container img {
-    height: clamp(5vh, 3em, 6vh);
+    height: 5rem;
     padding-right: 10px;
 }
 
 #convite #container h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 @keyframes rolagemConvite {
@@ -477,7 +451,8 @@ a {
 }
 
 /* 
-seção 5 
+seção 5
+==========================================================================================
 */
 #conteudo5 {
     display: flex;
@@ -493,77 +468,74 @@ seção 5
     display: flex;
     background-color: rgba(144, 196, 255, 0.063);
     box-shadow: var(--shadowSection);
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
+#conteudo5 #container #painelLeft{
+  display: flex;
+  align-items: center;
+}
+#conteudo5 #container #painelLeft #pix {
+text-align: center;
+
+}
+#conteudo5 #container #painelLeft #pix img{
+    width: 13rem;
+    margin-right: 3rem;
+    
+}
+#conteudo5 #container #painelLeft #pix h3{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+#conteudo5 #container #painelLeft #pix #qrCode{
+    width: 8rem;
+} 
 #conteudo5 #container #imgDestaque {
     position: relative;
 }
 
 #conteudo5 #container #imgDestaque img {
-    position: relative;
-    width: 35rem;
-    height: 37rem;
-    background-size: cover;
+    width: 25rem;
+    height: 26rem;
+    object-fit: cover;
 }
 
-#conteudo5 #container #imgDestaque #chavePix {
-    width: 8rem;
-    height: 8rem;
-    content: url(img/qrCodePix.jpeg);
+#conteudo5 #container #msg {
+    width: 40%;
     position: absolute;
-    bottom: 5rem;
-    left: 14.5rem;
+    right: 3rem;
+    top: 4rem;
+    transform: rotate(20deg);
+    font-size: 1rem;
+    font-weight: bold;
 }
-
 /* 
 footer
 */
-
 footer {
     display: flex;
     justify-content: center;
+    
 }
-
-footer #container {
-    display: flex;
+footer #container{
+  display: flex;
     position: relative;
     width: 97%;
     padding: 2rem 0rem;
     display: flex;
     background-color: rgba(144, 196, 255, 0.063);
     box-shadow: var(--shadowSection);
-    justify-content: space-around;
+    justify-content: center;  
 }
-
 footer #container #texto {
     display: flex;
-    flex-direction: column-reverse;
 }
-
 footer #container #texto ul li {
     font-size: 1.5rem;
 }
 
-footer #container #imgDestaque {
-    position: relative;
-}
 
-footer #container #imgDestaque img {
-    width: 25rem;
-    height: 26rem;
-    object-fit: cover;
-}
-
-footer #container #msg {
-    width: 40%;
-    position: absolute;
-    right: 3rem;
-    top: 4rem;
-    transform: rotate(20deg);
-    font-size: 1.4rem;
-    font-weight: bold;
-}
 
 /* 
 -------------------------------------------------------------------------------------------------------------------
@@ -573,20 +545,19 @@ footer #container #msg {
 
 @media screen and (max-width:768px) {
 
-    header #banner {
+    header{
         width: 100%;
-        margin: auto;
-        height: 25rem;
-        background-image: url(img/inclusao3.jpg);
-        background-size: cover;
     }
-
     body {
         width: 100%;
     }
 
     #convite #container h2 {
         font-size: 2rem;
+    }
+    #convite #container img {
+        height: 7rem;
+        padding-right: 10px;
     }
 
     #convite>#container {
