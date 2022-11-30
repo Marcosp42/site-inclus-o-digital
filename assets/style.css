@@ -28,7 +28,7 @@ a {
 }
 
 :root {
-    --shadowSection: 0px 0px 20px 2px rgb(40, 59, 79);
+    --shadowSection: 0px 0px 20px 2px rgb(0, 15, 31);
 }
 
 
@@ -46,27 +46,29 @@ a {
 
 
 header {
-
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 header #banner {
-    width: 100%;
-    height: clamp(10vh, 35vw, 25vh);
+    width: 97%;
+    margin: auto;
+    height: 20rem;
     background-image: url(img/inclusao3.jpg);
     background-size: cover;
+    box-shadow: var(--shadowSection);
+
 }
 
 header .menu {
     position: absolute;
     top: 1vw;
-    right: 1vw;
+    right: 4vw;
 }
 
 .menu .itenMenu {
-    width: 4vw;
-    height: 6vh;
+    width: 4rem;
+    height: 4rem;
     display: inline-block;
 }
 
@@ -103,11 +105,9 @@ header .menu {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     width: 55%;
-
 }
 
 #convite #container img {
-
     height: clamp(5vh, 3em, 6vh);
     padding-right: 10px;
 }
@@ -143,7 +143,8 @@ seção 1
 
 #conteudo1 {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+
 }
 
 #conteudo1>#container {
@@ -203,7 +204,8 @@ seção 2
 
 #conteudo2 {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+
 
 }
 
@@ -277,126 +279,104 @@ seção 2
     content: url(icones/saibaMais.png);
 }
 
-#conteudo2 #referencia a:nth-child(2) div {
-    content: url(icones/icons8-info-squared-30.png);
-}
-
-
 /* 
 seção 3
 ===================================================================================================================
 */
+
 #conteudo3 {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
 }
 
 #conteudo3 #container {
     width: 97%;
-    padding: 40px 0px;
+    padding: 5rem 0px;
     margin: auto;
     display: flex;
     background-color: rgba(144, 196, 255, 0.063);
     box-shadow: var(--shadowSection);
-    justify-content: space-around;
-
-}
-
-#conteudo3 #container #texto {
-    display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    padding: 40px;
+
 }
 
-#conteudo3 #container #texto p {
-    font-size: 1.3rem;
+#conteudo3 #container #player {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding-left: 12rem;
+}
+
+#conteudo3 #container #player video {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.572);
+}
+
+#conteudo3 #objetivo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo3 #container #player h2 {
+    font-size: 2.3rem;
+    text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-
-#conteudo3 #container #sugestao {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#conteudo3 #container #sugestao #sites {
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#conteudo3 #container #sugestao #sites h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: 400;
-    text-align: left;
-
-}
-
-#conteudo3 #container #sugestao #sites p {
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-
-#conteudo3 #container #sugestao #sites ul,
-li,
-a {
-    list-style: none;
+#conteudo3 #container #player span {
     font-size: 1.5rem;
-    margin-bottom: 15px;
-    font-weight: 400;
-}
-
-
-
-#conteudo3 #container #sugestao #canais {}
-
-#conteudo3 #container #sugestao #canais h2 {
-    font-size: 1.7rem;
+    text-align: center;
     margin-bottom: 20px;
-    font-weight: 400;
-
 }
 
-
-#conteudo3 #container #sugestao>#itens {
+#conteudo3 #objetivo #texto {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50px;
 }
 
-#conteudo3 #container #sugestao .item {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    margin: 5px;
-    background-color: black;
-    display: flex;
-    float: left;
+#conteudo3 #objetivo #imgDestaque {
+    width: 12rem;
+    content: url(img/Scratch1.png);
+    object-fit: contain;
+
 }
 
-#conteudo3 #imgDestaque {
-    width: 40rem;
-    content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
-    object-fit: cover;
+#conteudo3 #objetivo #texto h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
+#conteudo3 #objetivo #texto p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
 
 /* 
 seção4
 ===============================================================================================
 */
+
 #conteudo4 {
     display: flex;
-    margin-bottom: 1rem;
-
+    margin-bottom: 0.5rem;
 }
 
 #conteudo4 #container {
@@ -406,76 +386,184 @@ seção4
     display: flex;
     background-color: rgba(144, 196, 255, 0.063);
     box-shadow: var(--shadowSection);
-
+    justify-content: space-around;
 }
 
-#conteudo4 #container #player {
-    width: 47%;
-    height: 40vh;
+#conteudo4 #container #texto {
     display: flex;
-    justify-content: center;
-
-}
-
-#conteudo4 #container #player video {
-    width: 95%;
-    height: 100%;
-    margin: auto;
-    object-fit: cover;
-    border-radius: 50px;
-    background-color: rgba(0, 0, 0, 0.572);
-}
-
-#conteudo4 #objetivo {
-    width: 49%;
-    margin: auto;
-    display: flex;
-    padding-top: 2.5rem;
-    justify-content: center;
     align-items: center;
-}
-
-#conteudo4 #objetivo #texto {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 50px;
+    padding: 40px;
 }
 
-#conteudo4 #objetivo #imgDestaque {
-    width: 8vw;
-    height: 25vh;
-    content: url(img/Scratch1.png);
-    object-fit: contain;
+#conteudo4 #container #texto h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+#conteudo4 #container #texto p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    text-align: justify;
+}
+
+
+#conteudo4 #container #sugestao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
 }
 
-#conteudo4 #objetivo #texto h2 {
-    font-size: 2rem;
-    text-align: center;
+#conteudo4 #container #sugestao #sites {
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+#conteudo4 #container #sugestao #sites h2 {
+    font-size: 1.7rem;
     margin-bottom: 20px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+#conteudo4 #container #sugestao #sites p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+#conteudo4 #container #sugestao #sites ul,
+li,
+a {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+#conteudo4 #container #sugestao #canais h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+}
+
+#conteudo4 #container #sugestao>#itens {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#conteudo4 #container #sugestao .item {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: black;
+    display: flex;
+    float: left;
+}
+
+#conteudo4 #imgDestaque {
+    width: 50rem;
+    content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
+    object-fit: cover;
+}
+
+/* 
+seção 5 
+*/
+#conteudo5 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+#conteudo5 #container {
+    display: flex;
+    position: relative;
+    width: 97%;
+    padding: 2rem 0rem;
+    display: flex;
+    background-color: rgba(144, 196, 255, 0.063);
+    box-shadow: var(--shadowSection);
+    justify-content: space-around;
+}
+
+#conteudo5 #container #imgDestaque {
+    position: relative;
+}
+
+#conteudo5 #container #imgDestaque img {
+    position: relative;
+    width: 35rem;
+    height: 37rem;
+    background-size: cover;
+}
+
+#conteudo5 #container #imgDestaque #chavePix {
+    width: 8rem;
+    height: 8rem;
+    content: url(img/qrCodePix.jpeg);
+    position: absolute;
+    bottom: 5rem;
+    left: 14.5rem;
+}
+
+/* 
+footer
+*/
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer #container {
+    display: flex;
+    position: relative;
+    width: 97%;
+    padding: 2rem 0rem;
+    display: flex;
+    background-color: rgba(144, 196, 255, 0.063);
+    box-shadow: var(--shadowSection);
+    justify-content: space-around;
+}
+
+footer #container #texto {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer #container #texto ul li {
+    font-size: 1.5rem;
+}
+
+footer #container #imgDestaque {
+    position: relative;
+}
+
+footer #container #imgDestaque img {
+    width: 25rem;
+    height: 26rem;
+    object-fit: cover;
+}
+
+footer #container #msg {
+    width: 40%;
+    position: absolute;
+    right: 3rem;
+    top: 4rem;
+    transform: rotate(20deg);
+    font-size: 1.4rem;
     font-weight: bold;
 }
-
-#conteudo4 #objetivo #texto span {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#conteudo4 #objetivo #texto h3 {
-    font-size: 1.7rem;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-#conteudo4 #objetivo #texto p {
-    font-size: 1.2rem;
-    text-align: center;
-}
-
 
 /* 
 -------------------------------------------------------------------------------------------------------------------
@@ -485,14 +573,44 @@ seção4
 
 @media screen and (max-width:768px) {
 
+    header #banner {
+        width: 100%;
+        margin: auto;
+        height: 25rem;
+        background-image: url(img/inclusao3.jpg);
+        background-size: cover;
+    }
 
     body {
         width: 100%;
     }
 
     #convite #container h2 {
-        font-size: 1.4rem;
-        font-weight: bolder;
+        font-size: 2rem;
+    }
+
+    #convite>#container {
+        width: 70%;
+    }
+
+    @keyframes rolagemConvite {
+        0% {
+            left: 0%;
+            opacity: 0%;
+        }
+
+        10% {
+            opacity: 100%;
+        }
+
+        80% {
+            opacity: 90%;
+        }
+
+        100% {
+            left: 30%;
+            opacity: 0%;
+        }
     }
 
     /*
@@ -502,11 +620,11 @@ seção4
 
     #conteudo1 {
         display: flex;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     #conteudo1>#container {
-        padding: 20px;
+        padding: 4rem;
         width: 100%;
         margin: auto;
         display: flex;
@@ -535,7 +653,7 @@ seção4
     }
 
     #conteudo1 #imgDestaque {
-        margin-top: 1.5rem;
+        margin: 4rem 0rem;
         width: 80%;
     }
 
@@ -546,8 +664,7 @@ seção4
 
     #conteudo2 {
         display: flex;
-        margin-bottom: 2rem;
-
+        margin-bottom: 1rem;
     }
 
     #conteudo2 #container {
@@ -587,6 +704,7 @@ seção4
     #conteudo2 #imgDestaque {
         width: 80%;
         margin: auto;
+        margin-bottom: 2rem;
     }
 
     #conteudo2 #referencia {
@@ -600,8 +718,8 @@ seção4
 
     #conteudo2 #referencia .item {
         display: inline-block;
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
     }
 
     /* 
@@ -610,133 +728,26 @@ seção4
     */
     #conteudo3 {
         display: flex;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
     }
 
     #conteudo3 #container {
         width: 100%;
-        padding: 20px;
+        padding: 4rem 1rem;
         display: flex;
+        flex-direction: column;
         background-color: rgba(144, 196, 255, 0.063);
         box-shadow: var(--shadowSection);
-        flex-direction: column;
-
     }
 
-    #conteudo3 #container #texto {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-    }
-
-    #conteudo3 #container #texto p {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        font-weight: 500;
-    }
-
-
-    #conteudo3 #container #sugestao {
+    #conteudo3 #container #player {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-
+        margin-bottom: 0rem;
+        padding-left: 0;
     }
 
-    #conteudo3 #container #sugestao #sites {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    #conteudo3 #container #sugestao #sites h2 {
-        font-size: 4rem;
-        margin: 20px 0px;
-        font-weight: 400;
-        text-align: left;
-
-    }
-
-    #conteudo3 #container #sugestao #sites p {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        font-weight: 400;
-    }
-
-    #conteudo3 #container #sugestao #sites ul,
-    li,
-    a {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        font-weight: 400;
-    }
-
-    #conteudo3 #container #sugestao #canais {}
-
-    #conteudo3 #container #sugestao #canais h2 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-        font-weight: 400;
-
-    }
-
-
-    #conteudo3 #container #sugestao>#itens {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #conteudo3 #container #sugestao .item {
-        width: 13rem;
-        height: 13rem;
-        border-radius: 50%;
-        margin: 5px;
-        background-color: black;
-        display: flex;
-        float: left;
-    }
-
-    #conteudo3 #imgDestaque {
-        width: 60rem;
-        content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
-        object-fit: cover;
-    }
-
-
-    /* 
-    seção4
-    ===============================================================================================
-    */
-    #conteudo4 {
-        display: flex;
-        margin-bottom: 1rem;
-
-    }
-
-    #conteudo4 #container {
-        width: 100%;
-        margin: auto;
-        padding: 15px 0px;
-        display: flex;
-        background-color: rgba(144, 196, 255, 0.063);
-        box-shadow: var(--shadowSection);
-        flex-direction: column;
-
-    }
-
-    #conteudo4 #container #player {
-        width: 100%;
-        height: 30rem;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    #conteudo4 #container #player video {
+    #conteudo3 #container #player video {
         width: 95%;
         height: 100%;
         margin: auto;
@@ -745,7 +756,21 @@ seção4
         background-color: rgba(0, 0, 0, 0.572);
     }
 
-    #conteudo4 #objetivo {
+    #conteudo3 #container #player h2 {
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 0rem;
+        font-weight: bold;
+    }
+
+    #conteudo3 #container #player span {
+        font-size: 2.5rem;
+        text-align: justify;
+        margin-bottom: 0.5rem;
+        padding: 3rem;
+    }
+
+    #conteudo3 #objetivo {
         width: 100%;
         margin: auto;
         display: flex;
@@ -754,46 +779,140 @@ seção4
         align-items: center;
     }
 
-    #conteudo4 #objetivo #texto {
+    #conteudo3 #objetivo #texto {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 4px;
-        border-radius: 20px;
+        padding: 1.5rem;
+        border-radius: 50px;
     }
 
-    #conteudo4 #objetivo #imgDestaque {
-        width: 20rem;
-        height: 20rem;
+    #conteudo3 #objetivo #imgDestaque {
+        width: 17rem;
         content: url(img/Scratch1.png);
         object-fit: contain;
 
     }
 
-    #conteudo4 #objetivo #texto h2 {
-        font-size: 3rem;
+    #conteudo3 #objetivo #texto h3 {
+        font-size: 4rem;
         text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #conteudo3 #objetivo #texto p {
+        width: 100%;
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+
+    /* 
+    seção4
+    ===============================================================================================
+    */
+
+    #conteudo4 {
+        display: flex;
         margin-bottom: 1rem;
-        font-weight: bold;
+
     }
 
-    #conteudo4 #objetivo #texto span {
+    #conteudo4 #container {
+        width: 100%;
+        padding: 4rem 3rem;
+        margin: auto;
+        display: flex;
+        background-color: rgba(144, 196, 255, 0.063);
+        box-shadow: var(--shadowSection);
+        flex-direction: column;
+    }
+
+    #conteudo4 #container #texto {
+        display: flex;
+        padding: 0;
+    }
+
+    #conteudo4 #container #texto h2 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    #conteudo4 #container #texto p {
+        width: 100%;
         font-size: 2.5rem;
+        margin-bottom: 2rem;
         text-align: left;
-        margin-bottom: 1rem;
+        margin-left: 3rem;
     }
 
-    #conteudo4 #objetivo #texto h3 {
-        font-size: 2.4rem;
-        text-align: center;
-        margin-bottom: 5px;
+    #conteudo4 #container #sugestao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
     }
 
-    #conteudo4 #objetivo #texto p {
+    #conteudo4 #container #sugestao #sites {
+        height: 70%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    #conteudo4 #container #sugestao #sites h2 {
+        width: 100%;
+        font-size: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 3rem;
+
+    }
+
+    #conteudo4 #container #sugestao #sites p {
         font-size: 2.5rem;
-        text-align: left;
-        padding: 5px;
+        margin-bottom: 20px;
+        font-weight: 400;
     }
 
+    #conteudo4 #container #sugestao #sites ul,
+    li,
+    a {
+        list-style: none;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+
+    #conteudo4 #container #sugestao #canais h2 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+
+    }
+
+    #conteudo4 #container #sugestao>#itens {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #conteudo4 #container #sugestao .item {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        margin: 5px;
+        background-color: black;
+        display: flex;
+        float: left;
+    }
+
+    #conteudo4 #imgDestaque {
+        width: 50rem;
+        content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
+        object-fit: cover;
+    }
 }
