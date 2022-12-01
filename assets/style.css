@@ -458,7 +458,7 @@ a {
 
 #conteudo4 #imgDestaque {
     width: 50rem;
-    content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
+    content: url(img/foto3.png);
     object-fit: cover;
 }
 
@@ -986,7 +986,6 @@ footer #container #texto ul li {
 
     #conteudo4 #imgDestaque {
         width: 50rem;
-        content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
         object-fit: cover;
     }
 
