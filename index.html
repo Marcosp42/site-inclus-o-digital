@@ -11,12 +11,10 @@
 
 <body>
     <header>
-            <img src="assets/img/banner.png" alt="">
+        <img src="assets/img/banner.png" alt="">
     </header>
 
     <main>
-
-
         <section id="conteudo1">
 
             <div id="container">
@@ -129,49 +127,88 @@
                     <div id="sites">
                         <h2>Sites com materiais didaticos</h2>
                         <ul>
-                            <li><a href="https://canaltech.com.br/">canaltech.com.br</a></li>
-                            <li><a href="https://www.techtudo.com.br/">techtudo.com.br</a></li>
-                            <li><a href="https://www.tecmundo.com.br/">tecmundo.com.br</a></li>
+                            <li><a target="_blank" href="https://cfbcursos.com.br/cursos-cfb/">cfbcursos.com.br</a></li>
+                            <li><a target="_blank" href="https://pt.khanacademy.org/">pt.khanacademy.org</a></li>
+                            <li><a target="_blank" href="https://www.cod3r.com.br/">www.cod3r.com.br</a></li>
+                            <li><a target="_blank" href="https://cs50.harvard.edu/x/2022/">cs50.harvard.edu</a></li>
                         </ul>
                     </div>
                     <div id="canais">
                         <h2>Canais do Youtube recomendados para aprendizado</h2>
                         <div id="itens">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
+                            <a target="_blank" href="https://www.youtube.com/@bosontreinamentos">
+                                <div class="item"></div>
+                            </a>
+
+                            <a target="_blank" href="https://www.youtube.com/@cfbcursos">
+                                <div class="item"></div>
+                            </a>
+
+                            <a target="_blank" href="https://www.youtube.com/@cod3r">
+                                <div class="item"></div>
+                            </a>
+
+                            <a target="_blank" href="https://www.youtube.com/@CursoemVideo">
+                                <div class="item"></div>
+                            </a>
+
+                            <a target="_blank" href="https://www.youtube.com/@jerryst">
+                                <div class="item"></div>
+                            </a>
+
+                            <a target="_blank" href="https://www.youtube.com/@canalwrkits">
+                                <div class="item"></div>
+                            </a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="conteudo5">
-           <div id="container">
-            <div id="painelLeft">
-            <div id="pix">
-                    <h3>Colabore com nosso projeto</h3>
-                    <img src="assets/img/gatoMoney.png" alt="">
-                    <img id="qrCode"src="assets/img/qrCodePix.jpeg" alt="">
+            <div id="container">
+
+                <div id="imgDestaque">
+                    <img src="assets/img/gatoPlaca.png" alt="">
+                    <div id="msg">Venha participar 19:00 as 22:00</div>
                 </div>
-            
-        </div>
-            <div id="imgDestaque">
-                <img src="assets/img/gatoPlaca.png" alt="">
-                <div id="msg">Venha participar 19:00 as 22:00</div>
+                <div id="painelRight">
+                    <h3>Colabore com nosso projeto</h3>
+                    <div id="pix">
+                        <div>
+                            <img src="assets/img/gatoMoney.png" alt="">
+                        </div>
+                        <div id="qrCode">
+                            <img src="assets/img/qrCodePix.jpeg" alt="">
+                            <button>
+                                <input readonly="true" id="copiarPix" type="text"
+                                    value="00020101021126580014br.gov.bcb.pix0136be7bed67-3527-4994-94c9-5de0b6dff4e75204000053039865802BR5918MARCOS P A PEREIRA6013ENTRE RIOS DE62070503***63043829">
+                                <input id="btnCopiar" type="button" value="Copiar" onclick="copiar()">
+                                <script>
+                                    function copiar() {
+                                        document.getElementById("copiarPix").value = "00020101021126580014br.gov.bcb.pix0136be7bed67-3527-4994-94c9-5de0b6dff4e75204000053039865802BR5918MARCOS P A PEREIRA6013ENTRE RIOS DE62070503***63043829"
+                                        document.getElementById("copiarPix").select();
+                                        document.execCommand('copy');
+                                    }
+                                </script>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> 
         </section>
     </main>
+
 
     <footer>
         <div id="container">
             <div id="texto">
                 <ul>
-                    <li>Rua Tavares de Melo, 460 - Centro
-                        Conselheiro Lafaiete - MG</li>
+                    <li>
+                        <address>Rua Tavares de Melo, 460 - Centro
+                            Conselheiro Lafaiete - MG</address>
+                    </li>
                     <li>Feira dia 06/12/2022</li>
                 </ul>
             </div>

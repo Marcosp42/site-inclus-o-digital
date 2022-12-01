@@ -1,0 +1,1122 @@
+/* padrão 
+===============================================================================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 1.5vmin;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(12, 13, 34, 1) 9%, rgba(21, 23, 62, 1) 57%, rgba(19, 1, 36, 1) 76%, rgba(7, 0, 7, 1) 100%);
+    color: #e0fff9;
+}
+
+a:visited {
+    color: #8dffe8;
+}
+
+a {
+    color: #8dffe8;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+:root {
+    --shadowSection: 0px 0px 20px 2px #000000;
+    --bgSelection: rgba(0, 0, 0, 0.065);
+}
+
+
+
+
+/* TESTE */
+/* html * {
+    border: 1px solid blue;
+} */
+
+/* TESTE */
+
+
+/* cabecalho
+===============================================================================================
+*/
+
+
+header {
+    position: relative;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    margin: auto;
+    box-shadow: var(--shadowSection);
+    margin-bottom: 0.5rem;
+}
+
+header img {
+    width: 100%;
+}
+
+/* Convite
+===============================================================================================
+ */
+
+#convite {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+#convite>#container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation-name: rolagemConvite;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 55%;
+}
+
+#convite #container img {
+    height: 5rem;
+    padding-right: 10px;
+}
+
+#convite #container h2 {
+    font-size: 1.4rem;
+}
+
+@keyframes rolagemConvite {
+    0% {
+        left: 0%;
+        opacity: 0%;
+    }
+
+    10% {
+        opacity: 100%;
+    }
+
+    80% {
+        opacity: 90%;
+    }
+
+    100% {
+        left: 47%;
+        opacity: 0%;
+    }
+}
+
+/*
+seção 1
+============================================================================================== 
+ */
+
+#conteudo1 {
+    display: flex;
+    margin-bottom: 0.5rem;
+
+}
+
+#conteudo1>#container {
+    padding-top: 5%;
+    background-color: var(--bgSelection);
+    position: relative;
+    box-shadow: var(--shadowSection);
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#conteudo1 #texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo1 #texto h2 {
+    width: 100%;
+    font-size: 2.3rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+#conteudo1 #texto blockquote {
+    width: 100%;
+    font-size: 1.4rem;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+#conteudo1 #texto p {
+    width: 100%;
+    height: 50%;
+    font-size: 1.5rem;
+    margin-top: 14px;
+    text-align: left;
+}
+
+#conteudo1 #imgDestaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    content: url(img/foto2.png);
+    object-fit: contain;
+}
+
+/*
+seção 2
+============================================================================================== 
+ */
+
+#conteudo2 {
+    display: flex;
+    margin-bottom: 0.5rem;
+
+
+}
+
+#conteudo2 #container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgSelection);
+    box-shadow: var(--shadowSection);
+    padding: 40px 0px;
+    height: 80%;
+    width: 100%;
+    margin: auto;
+}
+
+#conteudo2 #top {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+#conteudo2 #texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo2 #texto p {
+    width: 100%;
+    height: 50%;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#conteudo2 #texto p a {
+    text-decoration: none;
+    font-style: inherit;
+    font-size: 1rem;
+}
+
+#conteudo2 #imgDestaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    content: url(img/foto1.png);
+    object-fit: contain;
+
+}
+
+#conteudo2 #referencia {
+    display: flex;
+}
+
+#conteudo2 #referencia a {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-left: 15px;
+    align-items: center;
+}
+
+#conteudo2 #referencia .item {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+}
+
+#conteudo2 #referencia a:nth-child(1) div {
+    content: url(icones/saibaMais.png);
+}
+
+/* 
+seção 3
+===================================================================================================================
+*/
+
+#conteudo3 {
+    display: flex;
+    margin-bottom: 0.5rem;
+
+}
+
+#conteudo3 #container {
+    width: 100%;
+    padding: 5rem 0px;
+    margin: auto;
+    display: flex;
+    background-color: var(--bgSelection);
+    box-shadow: var(--shadowSection);
+    flex-direction: column;
+
+}
+
+#conteudo3 #container #player {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding-left: 12rem;
+}
+
+#conteudo3 #container #player video {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.572);
+}
+
+#conteudo3 #objetivo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo3 #container #player h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#conteudo3 #container #player span {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#conteudo3 #objetivo #texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#conteudo3 #objetivo #imgDestaque {
+    width: 12rem;
+    content: url(img/Scratch1.png);
+    object-fit: contain;
+
+}
+
+#conteudo3 #objetivo #texto h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#conteudo3 #objetivo #texto p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* 
+seção4
+===============================================================================================
+*/
+
+#conteudo4 {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+#conteudo4 #container {
+    width: 100%;
+    padding: 40px 0px;
+    margin: auto;
+    display: flex;
+    background-color: var(--bgSelection);
+    box-shadow: var(--shadowSection);
+    justify-content: space-around;
+}
+
+#conteudo4 #container #texto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+#conteudo4 #container #texto h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+#conteudo4 #container #texto p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    text-align: justify;
+}
+
+
+#conteudo4 #container #sugestao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#conteudo4 #container #sugestao #sites {
+    height: 70%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+#conteudo4 #container #sugestao #sites h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+#conteudo4 #container #sugestao #sites p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+#conteudo4 #container #sugestao #sites ul,
+li,
+a {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+#conteudo4 #container #sugestao #canais h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+
+}
+
+#conteudo4 #container #sugestao>#itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#conteudo4 #container #sugestao .item {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: rgb(179, 245, 232);
+    display: flex;
+    float: left;
+    padding: 0.1rem;
+    box-shadow: 0px 0px 4px 2px rgb(73, 73, 73);
+
+}
+
+#conteudo4 #imgDestaque {
+    width: 50rem;
+    content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
+    object-fit: cover;
+}
+
+
+#conteudo4 #container #sugestao #itens a:nth-child(1) div {
+    content: url(imgCanaisYT/Boson.jpg);
+    object-position: center;
+    object-fit: contain;
+}
+
+#conteudo4 #container #sugestao #itens a:nth-child(2) div {
+    content: url(imgCanaisYT/cfbCursos.jpg);
+    object-position: center;
+    object-fit: contain;
+}
+
+#conteudo4 #container #sugestao #itens a:nth-child(3) div {
+    content: url(imgCanaisYT/cod3r.jpg);
+    object-position: center;
+    object-fit: contain;
+}
+
+#conteudo4 #container #sugestao #itens a:nth-child(4) div {
+    content: url(imgCanaisYT/cursoEmVideo.jpg);
+    object-position: center;
+    object-fit: contain;
+}
+
+#conteudo4 #container #sugestao #itens a:nth-child(5) div {
+    content: url(imgCanaisYT/JerryStrazzeri.jpg);
+    object-position: center;
+    object-fit: contain;
+}
+
+#conteudo4 #container #sugestao #itens a:nth-child(6) div {
+    content: url(imgCanaisYT/wrKits.jpg);
+    object-position: center;
+    object-fit: contain;
+}
+
+/* 
+seção 5
+==========================================================================================
+*/
+#conteudo5 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+#conteudo5 #container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 2rem 0rem;
+    display: flex;
+    background-color: var(--bgSelection);
+    box-shadow: var(--shadowSection);
+    justify-content: space-between;
+}
+
+#conteudo5 #container #painelRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-right: 8rem;
+}
+
+#conteudo5 #container #painelRight #pix {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#conteudo5 #container #painelRight #pix img {
+    width: 13rem;
+}
+
+#conteudo5 #container #painelRight h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+#conteudo5 #container #painelRight #pix #qrCode {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 4rem;
+
+}
+
+#conteudo5 #container #painelRight #pix button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo5 #container #painelRight #pix #btnCopiar {
+    width: 6rem;
+    color: aliceblue;
+    padding: 0.3rem;
+    background-color: #1a0021;
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+    z-index: 3;
+
+}
+
+#conteudo5 #container #painelRight #pix #btnCopiar:active {
+    color: rgb(211, 114, 255);
+}
+
+#conteudo5 #container #painelRight #pix #copiarPix {
+    font-size: 1px;
+    position: absolute;
+}
+
+#conteudo5 #container #painelRight #pix #qrCode img {
+    width: 8rem;
+
+}
+
+#conteudo5 #container #imgDestaque {
+    margin-left: 8rem;
+    position: relative;
+}
+
+#conteudo5 #container #imgDestaque img {
+    width: 25rem;
+    height: 26rem;
+    object-fit: cover;
+    margin-left: 10rem;
+}
+
+#conteudo5 #container #msg {
+    width: 40%;
+    position: absolute;
+    right: 0.7rem;
+    top: 5rem;
+    transform: rotate(20deg);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* 
+footer
+*/
+footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer #container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 2rem 0rem;
+    display: flex;
+    background-color: var(--bgSelection);
+    box-shadow: var(--shadowSection);
+    justify-content: center;
+}
+
+footer #container #texto {
+    display: flex;
+
+}
+
+footer #container #texto ul li {
+    font-size: 1.5rem;
+}
+
+
+
+/* 
+-------------------------------------------------------------------------------------------------------------------
+*/
+
+
+
+@media screen and (max-width:868px) {
+    header {
+        width: 100%;
+    }
+
+    header img {
+        width: 100%;
+        height: 18rem;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #convite #container h2 {
+        font-size: 1.8rem;
+    }
+
+    #convite #container img {
+        height: 7rem;
+        padding-right: 10px;
+    }
+
+    #convite>#container {
+        width: 70%;
+    }
+
+    @keyframes rolagemConvite {
+        0% {
+            left: 0%;
+            opacity: 0%;
+        }
+
+        10% {
+            opacity: 100%;
+        }
+
+        80% {
+            opacity: 90%;
+        }
+
+        100% {
+            left: 30%;
+            opacity: 0%;
+        }
+    }
+
+    /*
+    seção 1
+    ============================================================================================== 
+     */
+
+    #conteudo1 {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    #conteudo1>#container {
+        padding: 4rem;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conteudo1 #texto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conteudo1 #texto h2 {
+        width: 100%;
+        font-size: 5rem;
+    }
+
+    #conteudo1 #texto blockquote {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    #conteudo1 #texto p {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    #conteudo1 #imgDestaque {
+        margin: 4rem 0rem;
+        width: 80%;
+    }
+
+    /*
+    seção 2
+    ============================================================================================== 
+     */
+
+    #conteudo2 {
+        display: flex;
+        margin-bottom: 1rem;
+    }
+
+    #conteudo2 #container {
+        box-shadow: var(--shadowSection);
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #conteudo2 #top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conteudo2 #texto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #conteudo2 #texto p {
+        width: 100%;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    #conteudo2 #texto p a {
+        text-decoration: none;
+        font-style: inherit;
+        font-size: 1rem;
+    }
+
+    #conteudo2 #imgDestaque {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    #conteudo2 #referencia {
+        justify-content: flex-end;
+    }
+
+    #conteudo2 #referencia a {
+        font-size: 2rem;
+        flex: 0.2;
+    }
+
+    #conteudo2 #referencia .item {
+        display: inline-block;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    /* 
+    seção 3
+    ===================================================================================================================
+    */
+    #conteudo3 {
+        display: flex;
+        margin-bottom: 1rem;
+
+    }
+
+    #conteudo3 #container {
+        width: 100%;
+        padding: 4rem 1rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--shadowSection);
+    }
+
+    #conteudo3 #container #player {
+        width: 100%;
+        margin-bottom: 0rem;
+        padding-left: 0;
+    }
+
+    #conteudo3 #container #player video {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.572);
+    }
+
+    #conteudo3 #container #player h2 {
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: 0rem;
+        font-weight: bold;
+    }
+
+    #conteudo3 #container #player span {
+        font-size: 2.5rem;
+        text-align: justify;
+        margin-bottom: 0.5rem;
+        padding: 3rem;
+    }
+
+    #conteudo3 #objetivo {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding-top: 2.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #conteudo3 #objetivo #texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        border-radius: 50px;
+    }
+
+    #conteudo3 #objetivo #imgDestaque {
+        width: 17rem;
+        content: url(img/Scratch1.png);
+        object-fit: contain;
+
+    }
+
+    #conteudo3 #objetivo #texto h3 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #conteudo3 #objetivo #texto p {
+        width: 100%;
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+
+    /* 
+    seção4
+    ===============================================================================================
+    */
+
+    #conteudo4 {
+        display: flex;
+        margin-bottom: 1rem;
+
+    }
+
+    #conteudo4 #container {
+        width: 100%;
+        padding: 4rem 3rem;
+        margin: auto;
+        display: flex;
+        box-shadow: var(--shadowSection);
+        flex-direction: column;
+    }
+
+    #conteudo4 #container #texto {
+        display: flex;
+        padding: 0;
+    }
+
+    #conteudo4 #container #texto h2 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    #conteudo4 #container #texto p {
+        width: 100%;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: left;
+        margin-left: 3rem;
+    }
+
+    #conteudo4 #container #sugestao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #conteudo4 #container #sugestao #sites {
+        height: 70%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    #conteudo4 #container #sugestao #sites h2 {
+        width: 100%;
+        font-size: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 3rem;
+
+    }
+
+    #conteudo4 #container #sugestao #sites p {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    #conteudo4 #container #sugestao #sites ul,
+    li,
+    a {
+        list-style: none;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        font-weight: 400;
+    }
+
+    #conteudo4 #container #sugestao #canais h2 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+
+    }
+
+    #conteudo4 #container #sugestao>#itens {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #conteudo4 #container #sugestao .item {
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        margin: 2px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        float: left;
+        box-shadow: 0px 0px 2px 1px rgb(73, 73, 73);
+    }
+
+    #conteudo4 #imgDestaque {
+        width: 50rem;
+        content: url(https://img.freepik.com/vetores-gratis/conceito-de-tutoriais-online_52683-37481.jpg?w=2000);
+        object-fit: cover;
+    }
+
+    /* 
+    seção 5
+    */
+    #conteudo5 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    #conteudo5 #container {
+        display: flex;
+        position: relative;
+        width: 100%;
+        padding: 4rem 0rem;
+        display: flex;
+        box-shadow: var(--shadowSection);
+        justify-content: space-around;
+    }
+
+    #conteudo5 #container #painelRight {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 2rem;
+    }
+
+    #conteudo5 #container #painelRight #pix {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #conteudo5 #container #painelRight #pix img {
+        width: 13rem;
+    }
+
+    #conteudo5 #container #painelRight h3 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #conteudo5 #container #painelRight #pix #qrCode {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 4rem;
+        margin-bottom: 0rem;
+    }
+
+    #conteudo5 #container #painelRight #pix button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #conteudo5 #container #painelRight #pix #btnCopiar {
+        width: 6rem;
+        color: rgb(0, 0, 0);
+        padding: 0.4rem 0.6rem;
+        background-color: #beff63;
+        border-radius: 30px;
+        margin: 0px;
+        font-size: 1.5rem;
+        z-index: 3;
+        border: none;
+        margin-top: 1rem;
+    }
+
+
+
+    #conteudo5 #container #painelRight #pix #btnCopiar:active {
+        color: rgb(211, 114, 255);
+    }
+
+    #conteudo5 #container #painelRight #pix #copiarPix {
+        font-size: 1px;
+        position: absolute;
+    }
+
+    #conteudo5 #container #painelRight #pix #qrCode img {
+        width: 10rem;
+    }
+
+    #conteudo5 #container #imgDestaque {
+        margin-left: 0rem;
+        position: relative;
+    }
+
+    #conteudo5 #container #imgDestaque img {
+        width: 26rem;
+        height: 27rem;
+        object-fit: cover;
+        margin-left: 0rem;
+    }
+
+    #conteudo5 #container #msg {
+        width: 55%;
+        position: absolute;
+        right: 0.6rem;
+        top: 5rem;
+        transform: rotate(20deg);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    footer #container {
+        display: flex;
+        position: relative;
+        width: 100%;
+        padding: 2rem 0rem;
+        display: flex;
+        box-shadow: var(--shadowSection);
+    }
+
+    footer #container #texto {
+        display: flex;
+        align-items: center;
+    }
+
+    footer #container #texto ul>li {
+        font-size: 2rem;
+    }
+
+}
